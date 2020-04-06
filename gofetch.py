@@ -22,7 +22,6 @@ content = requests.get(dbLogin)
 data = json.loads(content.content)
 
 #Loads the ascii art
-#Ignore slant
 result = pyfiglet.figlet_format("Gofetch CLI", font = "doom") 
 print(result) 
 
@@ -39,14 +38,44 @@ def breed(breed_name):
         ('breed', breed_name),
     )
     response = requests.post('http://gofetch.pictures:5000/breeds/', params=params).json()
-    print(str(response))
+    print(response.content)
 
 # Pings all the dogs using a curl request
 @main.command()
 def dogs():
     "Grabs the dog list from the website"
     response = requests.post('http://gofetch.pictures:5000/dogs/')
-    print(str(response))
+    text  = response.content.decode("utf-8") 
+    text  = text.replace("Breeds:", "")
+    text  = text.replace("\t", "")
+    print(text)
+
+@main.command()
+def cats():
+    "Grabs the cat list from the website"
+    response = requests.post('http://gofetch.pictures:5000/cats/')
+    text  = response.content.decode("utf-8") 
+    text  = text.replace("Breeds:", "")
+    text  = text.replace("\t", "")
+    print(text)
+
+@main.command()
+def hamsters():
+    "Grabs the hamster list from the website"
+    response = requests.post('http://gofetch.pictures:5000/hamsters/')
+    text  = response.content.decode("utf-8") 
+    text  = text.replace("Breeds:", "")
+    text  = text.replace("\t", "")
+    print(text)
+
+@main.command()
+def birds():
+    "Grabs the bird list from the website"
+    response = requests.post('http://gofetch.pictures:5000/birds/')
+    text  = response.content.decode("utf-8") 
+    text  = text.replace("Breeds:", "")
+    text  = text.replace("\t", "")
+    print(text)
 
 # Lets us delete all mentions of the container files in the db
 @main.command()
@@ -77,7 +106,7 @@ def secret():
 @click.argument('link_url', nargs=1)
 def linkscrape(breed_name, link_url):
     "When you cannot click a random instagram page, use this command"
-    chrome_driver = os.getcwd() + "\\chromedriver.exe"
+    chrome_driver = os.environ.get("SCRAPE")
     animalText = str(breed_name)
     animalText = animalText.replace(",", "")
     animalText = animalText.replace("(", " ")
@@ -132,7 +161,7 @@ def linkscrape(breed_name, link_url):
 # Scrapes given the breed type
 def scrape(breed_name, breed_type):
     "Scrapes the breed following the catagory"
-    chrome_driver = os.getcwd() + "\\chromedriver.exe"
+    chrome_driver = os.environ.get("SCRAPE")
     animalText = str(breed_name)
     animalText = animalText.replace(",", "")
     animalText = animalText.replace("(", " ")
