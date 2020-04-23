@@ -5,9 +5,9 @@ Running the site:
     - Configure the database config(dblogin.json) and azure login(settings.json) with your own credentials.
  
 CLI Info:
-    * Command Line Interface web scraper for the site gofetch.pictures.
-    * Uses Microsoft's Azure for cloud, and PostgreSQL for database.
-    * Uses pyfiglet for the art and click for the backbone of the command system.
+* Command Line Interface web scraper for the site gofetch.pictures.
+* Uses Microsoft's Azure for cloud, and PostgreSQL for database.
+* Uses pyfiglet for the art and click for the backbone of the command system.
 
 How to use:
 1) Create info and dblogin json files and load them in(either locally or on the cloud).
