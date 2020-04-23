@@ -17,9 +17,10 @@
 * Uses Selenium and Chromewebdriver to web scrape Instagram images.
 
 ### How to use:
-1) Create info and dblogin json files and load them in(either locally or on the cloud).
-2) Run gofetch.py.
-3) Use the commands however you wish.
+1) Install dependencies in the requirements.txt
+2) Create info and dblogin json files and load them in(either locally or on the cloud).
+3) Run gofetch.py.
+4) Use the commands however you wish.
 
 ## Gofetch bot
 ### Info:
