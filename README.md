@@ -1,8 +1,8 @@
 # Gofetch
 
 Running the site:
-    - Navigate to website directory and run python app.py or python3 app.py if you have python2. It should launch a flask local host.
-    - Configure the database config(dblogin.json) and azure login(settings.json) with your own credentials.
+- Navigate to website directory and run python app.py or python3 app.py if you have python2. It should launch a flask local host.
+- Configure the database config(dblogin.json) and azure login(settings.json) with your own credentials.
  
 CLI Info:
 * Command Line Interface web scraper for the site gofetch.pictures.
