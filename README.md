@@ -1,5 +1,6 @@
 # gofetchscraper
 Command Line Interface web scraper for the site gofetch.pictures
+Uses Microsoft's Azure for cloud, and PostgreSQL for database
 
 How to use:
 1) create info and dblogin json files and load them in(either locally or on the cloud)
