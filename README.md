@@ -1,6 +1,10 @@
 # Gofetch
+## Info:
+* Created in Flask and Python
+* Uses Microsoft Azure for pictures alongside with content delivery network(CDN) to deliver fast images using edge servers nearby
+* Uses PostgreSQL as the database to allow versatility in services(ie, use all data in multiple platforms)
 
-# Running the site:
+## Running the site:
 - Navigate to website directory and run python app.py or python3 app.py if you have python2. It should launch a flask local host.
 - Configure the database config(dblogin.json) and azure login(settings.json) with your own credentials.
  
