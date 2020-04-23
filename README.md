@@ -15,6 +15,10 @@
 2) Run gofetch.py.
 3) Use the commands however you wish.
 
-Gofetch bot instructions
+# Gofetch bot
+## Info:
+  * Created in Go and uses DiscordGO
+  * Uses post requests to gofetch to do the functions
+## How to use
 1) Install go, and discordgo.
 2) Modify the config file with your custom discord bot token and hit go run.
