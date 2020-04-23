@@ -1,0 +1,166 @@
+<!--
+=========================================================
+* BLK Design System- v1.0.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/blk-design-system
+* Copyright 2019 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://breeds.blob.core.windows.net/websitefiles/images/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="https://breeds.blob.core.windows.net/websitefiles/images/img/favicon.png">
+  <title>
+    GoFetch
+  </title>
+ <!--     Fonts and icons     -->
+   <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
+   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+   <!-- Nucleo Icons -->
+   <link href="https://breeds.blob.core.windows.net/websitefiles/css/nucleo-icons.css" rel="stylesheet" />
+   <!-- CSS Files -->
+   <link href="https://breeds.blob.core.windows.net/websitefiles/css/blk-design-system.css?v=1.0.0" rel="stylesheet" />
+ </head>
+
+<body class="index-page">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-transparent " color-on-scroll="100">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand">
+          GoFetch
+        </a>
+        <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse justify-content-end" id="navigation">
+        <div class="navbar-collapse-header">
+          <div class="row">
+            <div class="col-6 collapse-brand">
+              <a>
+              </a>
+            </div>
+            <div class="col-6 collapse-close text-right">
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="tim-icons icon-simple-remove"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+          <li class="nav-item">
+            <a class="nav-link btn btn-default d-none d-lg-block" href="apidocs">
+              <i class="fa fa-cogs d-lg-none d-xl-none"></i> API documentation</a>
+            <div class="dropdown-menu dropdown-with-icons">
+              <a href="https://demos.creative-tim.com/blk-design-system/docs/1.0/getting-started/overview.html" class="dropdown-item">
+                <i class="tim-icons icon-paper"></i> Documentation
+              </a>
+              <a href="examples/register-page.html" class="dropdown-item">
+                <i class="tim-icons icon-bullet-list-67"></i>Register Page
+              </a>
+              <a href="examples/landing-page.html" class="dropdown-item">
+                <i class="tim-icons icon-image-02"></i>Landing Page
+              </a>
+              <a href="examples/profile-page.html" class="dropdown-item">
+                <i class="tim-icons icon-single-02"></i>Profile Page
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-default d-none d-lg-block" href="https://discordapp.com/api/oauth2/authorize?client_id=672606713337217044&permissions=55296&scope=bot">
+              <i class="fab fa-discord"></i></i> Discord Bot
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="wrapper">
+    <div class="page-header header-filter">
+      <div class="squares square1"></div>
+      <div class="squares square2"></div>
+      <div class="squares square3"></div>
+      <div class="squares square4"></div>
+      <div class="squares square5"></div>
+      <div class="squares square6"></div>
+      <div class="squares square7"></div>
+      <div class="container">
+        <div class="content-center brand">
+          <h1 class="h1-seo">GoFetch->Pictures</h1>
+          <body>
+            {% if message%}
+            <p class="message">{{ message | safe}}
+            {% endif%}
+            <div class="nameGroup">
+                
+                <h1><p>Type in a breed name to recieve a picture</p></h1>
+                <form action="/breed" method = "POST">
+        
+                <!--The input is sent to the back end, lower cased, and lets us access the available breeds-->
+        
+                <input name="animal" this.value = this.value.toLowerCase() list = "breedNames"></input>
+        
+                <!--Lets us make an autocomplete list of species-->
+                <datalist id="breedNames">
+                </datalist>
+                </div>
+                </form>
+        </div>
+      </div>
+    </div>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+ <!--   Core JS Files   -->
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <!-- Chart JS -->
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/plugins/chartjs.min.js"></script>
+  <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/plugins/moment.min.js"></script>
+  <script src="https://breeds.blob.core.windows.net/websitefiles/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <!-- Control Center for Black UI Kit: parallax effects, scripts for the example pages etc -->
+  <script src="https://breeds.blob.core.windows.net/websitefiles/assets/js/blk-design-system.min.js?v=1.0.0" type="text/javascript"></script>
+  <script>
+    $(document).ready(function() {
+      blackKit.initDatePicker();
+      blackKit.initSliders();
+    });
+
+    function scrollToDownload() {
+
+      if ($('.section-download').length != 0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        }, 1000);
+      }
+    }
+  </script>
+</body>
+
+</html>
