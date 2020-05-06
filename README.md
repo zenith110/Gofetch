@@ -31,3 +31,5 @@
 ### How to use
 1) Install go, and discordgo.
 2) Modify the config file with your custom discord bot token and hit go run.
+
+You may do anything with this site or the various components provided within this repo.
